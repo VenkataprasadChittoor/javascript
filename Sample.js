@@ -8,7 +8,7 @@ export default function App() {
         <View style={styles.column}></View>
         <Text style={styles.ali}></Text>
 
-        <Text>Train 1</Text>
+        <Text>Train 12</Text>
 
         <Text>0800-0900</Text>
 
