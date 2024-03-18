@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>String Methods</title>
+</head>
+<body>
+    <button onclick="myFunction2()">Try it</button>
+    <p id="demo1">Please visit Microsoft and Microsoft!</p>
+    <button  onclick="myFunction()">replace</button>
+    <p id="id">"Hi hellow good evening"</p>
+    <button onClick="myFunction1()">ReplaceAll</button>
+<p id="demo"> this is the prasad , prasad from muthukur, prasad mca</p>
+    <script>
+        function myFunction()
+        {
+           let Text =document.getElementById("id").innerHTML;
+           document.getElementById("id").innerHTML=Text.replace("hellow","prasad")
+        }
+        function myFunction1()
+        {
+            //Acutal text
+          let text1=" this is the prasad , prasad from muthukur, prasad mca";
+         let length1= document.getElementById("demo").innerHTML=text1.length;
+            //after replace
+          document.getElementById("demo").innerHTML= text1;
+          //after replaceAll
+        // document.getElementById("demo").innerHTML=text1.replaceAll("prasad","Venkat");
+        document.getElementById("demo").innerHTML=text1.lastIndexOf("p");
+        }
+        function myFunction2() 
+        {
+           let text = document.getElementById("demo1").innerHTML; 
+           document.getElementById("demo1").innerHTML=text.replace(/MICROSOFT/i,"W3Schools");
+        }
+        let text1=" this is the prasad , prasad from muthukur, prasad mca";
+         let length1= document.getElementById("demo").innerHTML=`the length of the sentense is`+text1.length;
+    </script>
+</body>
+</html

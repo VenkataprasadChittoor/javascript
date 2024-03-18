@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Strings</h1>
+<h2>The replaceAll() Method</h2>
+<button onclick="myFun()">Hi</button>
+<p id="demo1">Hi Hellow Prasad</p>
+<button onClick="myFunction()">try it</button>
+<p id="demo"></p>
+<button onclick="myFUN1()">hello</button>
+<p id="demo2"></p>
+<button onClick="myCharAt()">charAt</button>
+<p id="Char"></p>
+<script>
+    //lower and uppper case examples
+function myFun(){ 
+const tex2=document.getElementById("demo1").innerHTML;
+document.getElementById("demo1").innerHTML=tex2.toLowerCase();
+}
+//replacing the the new word in old word
+function myFunction(){
+const text1=" this is the prasad , prasad from muthukur, prasad mca";
+document.getElementById("demo").innerHTML= text1;
+document.getElementById("demo").innerHTML=text1.replaceAll("prasad","Venkat");
+}
+//Concatinating the two strings
+function myFUN1(){
+    const hi="hellow";
+    const he="Venkata prasad from mphasis";
+const text5=hi.concat("",he);
+document.getElementById("demo2").innerHTML=text5.toUpperCase();
+}
+//using CharAt() position
+function myCharAt(){
+    const he="prasad";
+    document.getElementById("Char").innerHTML=he;
+document.getElementById("Char").innerHTML=he.charCodeAt(5);
+}
+
+</script>
+
+</body>
+</html>

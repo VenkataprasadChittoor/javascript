@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StringOtherMethods</title>
+</head>
+<body>
+    <p id="String"></p>
+    <p id="Search"></p>
+    <p id="Match"></p>
+    <p id="match2"></p>
+    <p id="include"></p>
+    <script>
+        let text="this is the famous place where you can enjoy  place your Self"
+        //document.getElementById("String").innerHTML=text;
+        //Using idexOf method to find the index value of the specified word
+       document.getElementById("String").innerHTML="<p> the lastIndexOf word where is: </p>"+text.lastIndexOf("where");
+       // Searching the position of d using search method
+       let search=" this system is developed by the ANSI ";
+       document.getElementById("Search").innerHTML="<p> the letter `{d}` find at the position in sentese (this system is developed by the ANSI)</p>"+search.search("d");
+       // using  match string method "the" word 
+       let match1=" this is the greate book , but it is the one book ";
+       const myArr=match1.match(/the/gi);
+       document.getElementById("Match").innerHTML=myArr.length +" "+myArr;
+       //Using MatchAll string Method
+       let match=" cats are the cutest , cats are very lazy , cats are the small ";
+       const iterator = match.matchAll(/cats/gi);
+       document.getElementById("match2").innerHTML=iterator.lenght + Array.from(iterator);
+       // Inlcude method if it there true or else false
+       let incd="Hellow Prasad good evening";
+       document.getElementById("include").innerHTML=incd.includes("Hellow");
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foreach in Arrays,filter,map,reduce</title>
+</head>
+<body>
+    <p id="foreach"></p>
+    <script>
+        let num=[1,2,3,4,5,56,67,8,9];
+        document.write("Filter for even number is:")
+        //using the filter in foreach
+        num.filter(n => n%2===0)
+        .forEach(n => 
+            {
+                document.write( ` ${n}`);
+            }
+        );
+        document.write("<br>")
+        //Doubling the value by using map function 
+        let num2=[1,2,3,4,5,56,67,8,9];
+        document.write("Filter for even number and double of this number by using map  is:")
+        num2.filter(n => n%2===0)
+            .map(n => n*2)
+            .forEach(n => 
+            {
+                document.write( ` ${n}`);
+            }
+        );
+        document.write("<br>")
+        //reduce method 
+        let num3=[1,2,3,4,5,56,67,8,9];
+        document.write("Filter for even number by using filter, map and reduce methods:")
+        let res=num3.filter(n => n%2===0)
+        .map(n => n*2)
+        .reduce((a,b) => a+b );
+         document.write(res);
+         document.write("<br>");
+        //using foreach in arrays
+        let num1=[1,2,3,4,5,56,67,8,9];
+        document.write("the values are in N:")
+        num1.forEach(n => 
+            {
+                document.write(n);
+            }
+        );
+    </script>
+</body>
+</html>

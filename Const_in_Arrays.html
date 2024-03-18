@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Const variable</title>
+</head>
+<body>
+    <p id="prasad"></p>
+    <p id="temp"></p>
+</body>
+</html>
+<script>
+    const cars=["Volvo","Eicher","Ashok Leyland"];
+   
+    cars[0]="Mahindra";
+    cars.push("Suzuki");
+    document.getElementById("prasad").innerHTML=cars;
+    cars.pop([2]);
+    //Adding new a property
+    cars.color="red";
+    cars.price=123
+    cars.brands=["Volvo","Eicher","Ashok Leyland"]
+    // Concatinating the new information to existing value 
+    document.getElementById("prasad").innerHTML="car brand are " + cars.brands;
+       // fetching the specified value of an attribute
+    const brands={ type:"volvo", price:"121322", type:"4Wheel"};
+    document.getElementById("temp").innerHTML=brands.type;
+    doc
+</script>

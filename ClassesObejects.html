@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>ObjectClasses</title>
+</head>
+<body>
+    <p id="clsobj"></p>
+    <script>
+        class Car{
+            constructor(name){
+                this.brand=name;
+            }  
+        }
+        const cars=new Car("Volvo");
+        document.getElementById("clsobj").innerHTML=cars.brand;
+    </script>
+</body>
+</html>

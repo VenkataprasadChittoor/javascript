@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+</head>
+<body>
+    <p id="Switch"></p>
+    <script>
+        let message="hi";
+        Switch(message=="hi")
+        {
+            case1:
+                message="hello";
+                document.write("hi");
+                break;
+            case2:
+                message="hi";
+                document.write("good morning All");
+                break;
+           default:
+                   message= document.write("nothing is there to print")
+
+        }
+        document.getElementByIdp("Switch").innerHTML= "the message is" + message;
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">before shallow copy</p>
+    <p id="demo1">After shallow copy</p>
+    <p id="demo2">before Deep copy</p>
+    <p id="demo3">After Deep copy</p>
+    <script>
+        let employee={
+              eid:"e139",
+              ename:"prasad",
+              address:"bangalore"
+        }
+        let newEmployee = employee;
+        newEmployee.ename="venkat";
+        // console.log("employee:"employee);
+        // console.log("newEmployee:"newEmployee);
+        document.getElementById("demo").innerHTML="Name is "+employee.ename;
+        document.getElementById("demo1").innerHTML=newEmployee.ename;
+
+        let employee1={
+              eid:"e139",
+              ename:"prasad",
+              address:"bangalore"
+        }
+        let newEmployee1 = JSON.parse(JSON.stringify(employee1));
+        newEmployee1.ename="venkat";
+        // console.log("employee:"employee1);
+        // console.log("newEmployee:"newEmployee1);
+        document.getElementById("demo2").innerHTML="Name is "+employee1.ename;
+        document.getElementById("demo3").innerHTML=newEmployee1.ename;
+
+    </script>
+</bod
